@@ -1,12 +1,12 @@
 public class Recipe {
 
-    String[] name;
-    String[] ingredient;
+    String name;
+    String ingredient;
     int time;
-    String[] description;
+    String description;
 
 
-    Recipe(String[] name, String[] ingredient, int time, String[] description) {
+    Recipe(String name, String ingredient, int time, String description) {
         this.name = name;
         this.ingredient = ingredient;
         this.time = time;
@@ -16,23 +16,12 @@ public class Recipe {
     void display() {
         System.out.println();
         System.out.println("**********************************************");
-        System.out.print("Przepis na: ");
-        for (String n : name) {
-            System.out.println(n);
-        }
-        System.out.print("Składniki: ");
-        for (String i : ingredient) {
-            System.out.println(i);
-        }
+        System.out.println("Przepis na: "+name);
+        System.out.println("Składniki: "+ingredient);
         System.out.println("Czas przygotowania (w min): " + time);
-
-        System.out.println("Sposób przyrządzenia: ");
-        for(String d : description){
-            System.out.println(d);
+        System.out.println("Sposób przyrządzenia: "+ description);
         }
-
-
     }
-}
+
 
 
